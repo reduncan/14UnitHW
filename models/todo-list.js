@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Todo = sequelize.define("Todo", {
+    var Todos = sequelize.define("Todo", {
       body: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -12,5 +12,5 @@ module.exports = function(sequelize, DataTypes) {
         defaultValue: false
       }
     });
-    return Todo;
+    return Todos;
   };
