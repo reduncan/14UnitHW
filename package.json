@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/reduncan/14UnitHW/issues"
   },
-  "homepage": "https://github.com/reduncan/14UnitHW#readme"
+  "homepage": "https://github.com/reduncan/14UnitHW#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mysql2": "^1.6.4",
+    "nodemon": "^1.18.6",
+    "sequelize": "^4.41.2",
+    "socket.io": "^2.1.1"
+  }
 }
