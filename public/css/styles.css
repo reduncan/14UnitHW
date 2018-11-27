@@ -49,13 +49,13 @@ input {
     width: 375px;
     margin-bottom: 15px;
     margin-left: 25px;
-    border-bottom: 2px solid rgba(161, 163, 164, .75);
+    border-bottom: 2px solid rgba(161, 163, 164, .9);
     font-family: 'Roboto', sans-serif;
     font-size: 38px;
 }
 
 input::placeholder {
-    color: rgba(161, 163, 164, .75);
+    color: rgba(161, 163, 164, .9);
 }
 
 button {

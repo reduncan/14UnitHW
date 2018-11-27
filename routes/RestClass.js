@@ -21,8 +21,8 @@ class RestfulAPI {
     create() {
         this.app.post(`/api/${this.resource}`, (req, res) => {
             this.model.create({
-                todo: req.body,
-                complete: req.body
+                todo: req.body.todo,
+                complete: req.body.complete
             }).then(function (dbTodo) {
                 res.json(dbTodo);
             }).catch(function (err) {

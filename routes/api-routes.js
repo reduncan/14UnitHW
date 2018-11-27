@@ -3,7 +3,7 @@ const db = require('../models');
 
 module.exports = function (app) {
 
-    const todo = new ResfulAPI('todo', app, db.todos);
+    const todo = new ResfulAPI('todo', app, db.Todo);
     todo.find();
     todo.create();
     todo.delete('id');
