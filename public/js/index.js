@@ -6,7 +6,7 @@ const create = function (data) {
     const description = $(`<h2 class="text">${data.todo}`);
     const xmark = $('<i class="far fa-circle">');
 
-    listItem.append(description, xmark);
+    listItem.append(xmark, description);
     complete(xmark);
 
     description.text(data.todo);
@@ -28,12 +28,12 @@ const loadTodos = function () {
             const listItem = $(`<li>`);
             const description = $(`<h2 class="text ${element.complete}">${element.todo}`);
             if (element.complete === true) {
-                xmark = $('<i class="far fa-times-circle">');
+                xmark = $('<i class="far fa-dot-circle">');
             } else {
                 xmark = $('<i class="far fa-circle">');
             };
 
-            listItem.append(description, xmark);
+            listItem.append(xmark, description);
             complete(xmark);
 
             description.text(element.todo);
@@ -82,9 +82,9 @@ socket.on('emit-todo', function (data) {
 const toggleCheckbox = function (element) {
     if ($(element).hasClass('far fa-circle')) {
         $(element).removeClass('far fa-circle');
-        $(element).addClass('far fa-times-circle');
+        $(element).addClass('far fa-dot-circle');
     } else {
-        $(element).removeClass('far fa-times-circle');
+        $(element).removeClass('far fa-dot-circle');
         $(element).addClass('far fa-circle');
     };
 };
