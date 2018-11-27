@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
-    var Todos = sequelize.define("Todo", {
-      body: {
+    const Todos = sequelize.define("Todo", {
+      todo: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {

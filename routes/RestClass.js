@@ -1,4 +1,4 @@
-var db = require("../models");
+const db = require("../models");
 
 class RestfulAPI {
     constructor(resource, app, model) {
@@ -21,8 +21,8 @@ class RestfulAPI {
     create() {
         this.app.post(`/api/${this.resource}`, (req, res) => {
             this.model.create({
-                body: req.body.text,
-                complete: req.body.complete
+                todo: req.body,
+                complete: req.body
             }).then(function (dbTodo) {
                 res.json(dbTodo);
             }).catch(function (err) {

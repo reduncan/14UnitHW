@@ -2,7 +2,7 @@
     "development": {
       "username": "root",
       "password": "root",
-      "database": "todolist",
+      "database": "todo_live",
       "host": "localhost",
       "port": 8889,
       "dialect": "mysql"
