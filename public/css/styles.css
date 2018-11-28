@@ -7,6 +7,11 @@ h1 {
     font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+
 .name {
     font-size: 52px;
     font-weight: 100;
@@ -45,13 +50,13 @@ form {
 
 input {
     background: transparent;
-    height: 50px;
+    height: 40px;
     width: 375px;
     margin-bottom: 15px;
     margin-left: 25px;
     border-bottom: 2px solid rgba(161, 163, 164, .9);
     font-family: 'Roboto', sans-serif;
-    font-size: 38px;
+    font-size: 32px;
 }
 
 input::placeholder {
@@ -60,4 +65,68 @@ input::placeholder {
 
 button {
     display: none;
+}
+
+ul {
+    margin-top: 50px;
+}
+
+li {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50px 350px;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.text {
+    display: grid;
+    grid-column: span 1;
+    align-items: center;
+    text-align: left;
+    border-bottom: 2px solid rgba(161, 163, 164, .9);
+}
+
+.fa-circle {
+    display: grid;
+    grid-column: span 1;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    font-size: 22px;
+    color: rgba(161, 163, 164, .9)
+}
+
+.fa-dot-circle {
+    display: grid;
+    grid-column: span 1;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    font-size: 22px;
+    color: rgba(161, 163, 164, .9)
+}
+
+@media only screen and (max-width: 670px) {
+    .name, .title {
+        display: none;
+    }
+    .list {
+        width: 400px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    form {
+        position: absolute;
+        top: 0px;
+    }
+
+    ul {
+        z-index: 10;
+        position: absolute;
+        top: 30px;
+    }
 }
