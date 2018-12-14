@@ -39,10 +39,6 @@ h2 {
     top: 0px;
 }
 
-#todolist {
-    overflow: scroll;
-}
-
 form {
     position: absolute;
     bottom: 0px;
